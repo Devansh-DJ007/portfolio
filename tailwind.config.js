@@ -10,9 +10,26 @@ module.exports = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+        'gilroy-medium' : ['Gilroy-Medium', 'sans-serif'],
+        'gilroy-bold' : ['Gilroy-Bold', 'sans-serif'],
+        'roboto-slab' : ['Roboto Slab', 'sans-serif'],
+      },
+      animation: {
+        fade: 'fadeIn 5s ease-in-out',
+      },
+      keyframes: theme => ({
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+      }),
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }
