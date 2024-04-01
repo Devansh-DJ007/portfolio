@@ -22,7 +22,7 @@ function Hero({ frontPage,social }: Props) {
       className="h-screen flex flex-col items-center font-gilroy-medium"
     >
       <div className="mt-56 md:mt-48 ">
-        <p className="text-3xl tracking-[1px] font-bold">Hi&#33; I&#39;m</p>
+        <p className="italic text-3xl tracking-[1px] font-bold">Hi&#33; I&#39;m</p>
       </div>
       <div>
         <img
@@ -33,7 +33,7 @@ function Hero({ frontPage,social }: Props) {
         />
       </div>
       <div className="my-5">
-        <p className="text-lg md:text-xl text-gray-500 font-semibold px-6 md:px-20 lg:px-40 text-center justify-center">
+        <p className="italic text-lg md:text-xl text-gray-500 font-semibold px-6 md:px-20 lg:px-40 text-center justify-center">
           {frontPage?.description}
         </p>
       </div>

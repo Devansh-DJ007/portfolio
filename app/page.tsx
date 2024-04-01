@@ -1,8 +1,8 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Experience from "@/components/Experience";
+import Experience from "@/components/Experiences";
 import Project from "@/components/Project";
-import Techstack from "@/components/Techstack";
+import Techstack from "@/components/Techstacks";
 import ContactMe from "@/components/ContactMe";
 import Footer from "@/components/Footer";
 import { sanityClient } from "@/sanity";

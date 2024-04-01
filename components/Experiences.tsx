@@ -8,15 +8,15 @@ type Props = {
   experiences: Experience[];
 };
 
-function Experience({ experiences }: Props) {
+function Experiences({ experiences }: Props) {
   return (
     <div className="flex flex-col px-6 md:px-20 lg:px-40 space-y-5 font-roboto-slab">
       <div className="mt-14">
-        <p className="text-3xl font-bold">Experience</p>
+        <p className="italic flex justify-center text-3xl font-bold">EXPERIENCE</p>
       </div>
       <div>
-        <p className="text-gray-400 text-xl tracking-wide">
-          Want insights into my past experiences &#63;
+        <p className="italic flex justify-center text-gray-400 text-xl tracking-wide">          
+         Want insights into my past experiences &#63;
         </p>
       </div>
       <motion.div
@@ -34,4 +34,4 @@ function Experience({ experiences }: Props) {
   );
 }
 
-export default Experience;
+export default Experiences;

@@ -10,27 +10,29 @@
   },
   "dependencies": {
     "@sanity/image-url": "^1.0.2",
-    "@sanity/vision": "^3.14.2",
+    "@sanity/vision": "^3.36.1",
     "@types/node": "20.4.2",
     "@types/react": "18.2.15",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.14",
+    "embla-carousel-autoplay": "^8.0.0",
+    "embla-carousel-react": "^8.0.0",
     "eslint": "8.45.0",
-    "eslint-config-next": "13.4.10",
-    "framer-motion": "^10.12.22",
-    "next": "13.4.10",
-    "next-sanity": "^5.1.2",
+    "eslint-config-next": "^14.1.4",
+    "framer-motion": "^10.18.0",
+    "next": "^14.1.4",
+    "next-sanity": "^5.5.11",
     "postcss": "8.4.26",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-icons": "^4.10.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0",
     "react-social-icons": "^5.15.0",
-    "sanity": "^3.14.2",
+    "sanity": "^3.36.1",
     "styled-components": "5.2",
     "tailwindcss": "3.3.3",
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "tailwind-scrollbar": "^3.0.4"
+    "tailwind-scrollbar": "^3.1.0"
   }
 }

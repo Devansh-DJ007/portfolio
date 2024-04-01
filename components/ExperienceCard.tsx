@@ -8,7 +8,7 @@ type Props = {
 
 function ExperienceCard({ experience }: Props) {
   return (
-    <div className="p-3 my-2 font-roboto-slab">
+    <div className="p-3 my-5 font-roboto-slab">
       <div className="flex flex-row space-x-3">
         <div className="text-center my-auto">
           <img
@@ -19,12 +19,12 @@ function ExperienceCard({ experience }: Props) {
         </div>
         <div className="flex flex-col">
           <div className="items-center object-center">
-            <p className="text-xl font-bold">{experience?.company}</p>
+            <p className="italic text-xl font-bold">{experience?.company}</p>
           </div>
           <div className="items-center object-center">
-            <p className="text-base">{experience?.position}</p>
+            <p className="text-base font-sans">{experience?.position}</p>
           </div>
-          <div className="items-center object-center">
+          <div className="items-center object-center font-sans">
             <p className="text-base text-gray-500">{experience?.timeline}</p>
           </div>
           <div className="flex space-x-2 my-2 ">

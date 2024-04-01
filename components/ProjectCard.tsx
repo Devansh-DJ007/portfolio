@@ -1,5 +1,6 @@
 import { urlFor } from "@/sanity";
 import { Project } from "@/typings";
+import Link from "next/link";
 import React from "react";
 
 type Props = {
@@ -8,25 +9,20 @@ type Props = {
 
 function ProjectCard({ project }: Props) {
   return (
-    // <div className="p-1 my-2 rounded-lg font-gilroy-medium">
-    <div className="p-1 my-2 rounded-lg font-poppins">
+    <div className="p-1 my-2 rounded-lg font-sans">
       <div className="">
-        <div>
+        <Link href={project?.link} target="_blank">
           <img
-            width="100%"
+            width="90%"
             src={urlFor(project?.image).url()}
             alt="Tickets NFT"
-            className="rounded-lg cursor-pointer shadow-[0_2px_111px_rgb(45,45,45,0.52)] hover:shadow-[0_2px_48px_rgb(158,158,158,0.25)]"
+            className="transform hover:scale-105 transition duration-200 ease-out hover:drop-shadow-lg rounded-2xl cursor-pointer"
           />
-        </div>
+        </Link>
         <div className="mb-3 mt-4">
-          <p className="text-base ">
-            {project?.description}
-          </p>
-          <a href={project?.link} target="_blank">
-            <p className="text-gray-500 text-base font-bold mt-4 hover:text-[#96ff1d] cursor-pointer">
+          <p className="text-base mb-2">{project?.description}</p>
+          <a href={project?.link} target="_blank" className="text-gray-500 text-base font-bold mt-4 hover:text-[#96ff1d] cursor-pointer">  
               See more
-            </p>
           </a>
         </div>
       </div>

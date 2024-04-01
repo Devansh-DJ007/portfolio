@@ -17,6 +17,7 @@ module.exports = {
         'gilroy-medium' : ['Gilroy-Medium', 'sans-serif'],
         'gilroy-bold' : ['Gilroy-Bold', 'sans-serif'],
         'roboto-slab' : ['Roboto Slab', 'sans-serif'],
+        'roboto-italic': ['Roboto-Italic', 'sans-serif'],
       },
       animation: {
         fade: 'fadeIn 5s ease-in-out',

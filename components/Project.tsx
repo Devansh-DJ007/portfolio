@@ -4,20 +4,23 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
 import { Project } from "@/typings";
+import { TiTimes } from "react-icons/ti";
 
 type Props = {
   projects: Project[];
 };
 
-function Project({projects}: Props) {
+function Projects({ projects }: Props) {
   return (
     <div className="flex flex-col px-6 md:px-20 lg:px-40 space-y-5 font-gilroy-medium">
       <div className="mt-28 mb-8">
         <div className="">
-          <p className="text-3xl font-bold">Projects</p>
+          <p className="italic flex justify-center text-3xl font-bold">
+            PROJECTS
+          </p>
         </div>
         <div className="mt-5">
-          <p className="text-gray-400 text-xl tracking-wide">
+          <p className="italic flex justify-center text-gray-400 text-xl tracking-wide">
             Let&apos;s explore my pet projects &#33;
           </p>
         </div>
@@ -37,4 +40,4 @@ function Project({projects}: Props) {
   );
 }
 
-export default Project;
+export default Projects;
