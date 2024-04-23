@@ -21,7 +21,7 @@ function Hero({ frontPage,social }: Props) {
       viewport={{ once: true }}
       className="h-screen flex flex-col items-center font-gilroy-medium"
     >
-      <div className="mt-56 md:mt-48 ">
+      <div className="mt-60 sm:mt-28 md:mt-24 lg:mt-28 2xl:mt-52">
         <p className="italic text-3xl tracking-[1px] font-bold">Hi&#33; I&#39;m</p>
       </div>
       <div>
@@ -37,7 +37,7 @@ function Hero({ frontPage,social }: Props) {
           {frontPage?.description}
         </p>
       </div>
-      <div className="flex flex-row mt-16 space-x-8">
+      <div className="flex flex-row mt-16 lg:mt-10 2xl:mt-16 space-x-8">
         {social.map((social) => (
           <SocialIcon
             key={social._id}
